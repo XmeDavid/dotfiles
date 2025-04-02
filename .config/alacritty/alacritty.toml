@@ -20,3 +20,14 @@ size = 18
 
 [terminal]
   shell = { program = "/bin/zsh" }
+
+[keyboard]
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+chars = "\u001bb"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
+chars = "\u001bf"
