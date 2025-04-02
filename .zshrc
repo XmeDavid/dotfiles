@@ -4,6 +4,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias ll="exa -la"
+alias txa="tmux attach"
+alias txd="tmux detach"
 
 # bun completions
 [ -s "/Users/xmedavid/.bun/_bun" ] && source "/Users/xmedavid/.bun/_bun"
