@@ -6,6 +6,7 @@ export NVM_DIR="$HOME/.nvm"
 bindkey "^[b" backward-word
 bindkey "^[f" forward-word
 
+alias "nv-help"="source ~/.nv-help"
 alias ll="exa -la"
 alias txa="tmux attach"
 alias txd="tmux detach"

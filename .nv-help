@@ -1,0 +1,1 @@
+rg '^\s*-- \[[^\]]+\]' ~/.config/nvim/lua/core/keymaps.lua
