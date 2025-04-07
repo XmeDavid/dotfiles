@@ -1,3 +1,4 @@
+.tmux
 .local-config/*
 !.local-config/README.md
 *-lock.json
