@@ -6,14 +6,16 @@ export NVM_DIR="$HOME/.nvm"
 bindkey "^[b" backward-word
 bindkey "^[f" forward-word
 
-alias "nv-help"="source ~/.nv-help"
-alias ll="exa -la"
+alias nv-help="source ~/.nv-help"
+alias tmux-setup="~/.local-config/tmux-setup"
 alias txa="tmux attach"
 alias txd="tmux detach"
+alias nv="nvim"
+alias rf="source"
 
-# bun completions
-[ -s "/Users/xmedavid/.bun/_bun" ] && source "/Users/xmedavid/.bun/_bun"
+export PATH="$PATH:/Users/$USER/dev/go-tools/bin"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# Local config load
+if [[ -f ~/.local-config/.zshrc ]]; then
+  source ~/.local-config/.zshrc
+fi

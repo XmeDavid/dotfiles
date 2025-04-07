@@ -54,9 +54,3 @@ vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Sear
 vim.keymap.set("n", "<leader>fc", function()
   require("telescope.builtin").grep_string()
 end, { desc = "Grep for word under cursor" })
-
-
-
-
-
-
