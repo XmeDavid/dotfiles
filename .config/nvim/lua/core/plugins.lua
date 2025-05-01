@@ -19,13 +19,30 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
-		
+		"hrsh7th/nvim-cmp",
+		"hrsh7th/cmp-nvim-lsp",
+		"L3MON4D3/LuaSnip",
+
 		"nvim-lua/plenary.nvim",
 		{
 			"nvim-telescope/telescope.nvim",
 			tag = "0.1.8",
 			dependencies = { "nvim-lua/plenary.nvim" },
 		},
+		{ "rose-pine/neovim", name = "rose-pine" },
+		{
+			"neovim/nvim-lspconfig",
+			dependencies = {
+				{
+					"williamboman/mason.nvim",
+					config = true
+				},
+				"williamboman/mason-lspconfig.nvim",
+			},
+			config = function()
+				require("core.lsp") -- calls your LSP setup
+			end
+		}
 	},
 	checker = { enabled = true },
 })

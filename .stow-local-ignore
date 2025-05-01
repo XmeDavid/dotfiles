@@ -1,0 +1,10 @@
+\.git$
+^README\.md$
+^LICENSE$
+\.gitignore$
+\.tmux$
+\.DS_Store$
+\.swp$
+\.swo$
+\.bak$
+\.tmp$
