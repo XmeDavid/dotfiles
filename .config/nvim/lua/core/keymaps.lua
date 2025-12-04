@@ -54,3 +54,18 @@ vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Sear
 vim.keymap.set("n", "<leader>fc", function()
   require("telescope.builtin").grep_string()
 end, { desc = "Grep for word under cursor" })
+
+
+-- [VIBE] gd - Go to definition
+-- [VIBE] gD - Go to declaration
+-- [VIBE] gi - Go to implementation
+-- [VIBE] gr - Show references
+-- [VIBE] gt - Go to type definition
+-- [VIBE] K - Hover documentation
+-- [VIBE] <C-k> - Signature help
+-- [VIBE] <leader>rn - Rename symbol
+-- [VIBE] <leader>ca - Code action
+-- [VIBE] <leader>cf - Format buffer
+-- [VIBE] [d / ]d - Navigate diagnostics
+-- [VIBE] <leader>e - Show diagnostic float
+-- [VIBE] <leader>q - Diagnostic list
